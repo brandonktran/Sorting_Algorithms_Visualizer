@@ -46,10 +46,10 @@ function createBars(num) {
 const mainColor = '#de5d83';
 
 // color when compared
-const compColor = '#FF4949';
+const compColor = '#94a8b3'; //#222c3c '#FF4949'
 
 // color when in place (or done) '#58ffee'
-const finColor = '#13CE66';
+const finColor = '#222c3c';
 
 createBars(40);
 
