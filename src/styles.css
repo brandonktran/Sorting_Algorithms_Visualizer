@@ -10,8 +10,9 @@ font-weight: normal;
 }
 
 body {
-	background-color: white;
+	background-color: #373a36;
 }
+
 .header {
 	/* margin-top: 20px; */
 	text-align: center;
@@ -66,7 +67,7 @@ body {
 }
 
 .button[disabled] {
-	color: red;
+	color: grey;
 }
 
 .button:hover {
@@ -86,6 +87,7 @@ body {
 
 span, p {
 	color: white;
+	font-size: 2vw;
 }
 
 .myslider {
