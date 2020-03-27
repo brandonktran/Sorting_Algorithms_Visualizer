@@ -14,15 +14,20 @@ function createBars(num) {
 		bar.style.height = `${value * 6}px`;
 		//bar.style.transform = `translateX(${i * 800/num}px)`;
 		let width = 60.51295 + (1.322553 - 60.51295) / (1 + (num / 155.6546) ** 2.583344);
-		bar.style.width = 100 / (num + width) + '%';
+		// bar.style.width = 100 / (num + width) + '%';
+		bar.style.width = (93.4/(num) + '%');
 		// bar.style.transform = `translateX(${i * 1200/num + 2}px)`;
-		bar.style.transform = `translateX(${2+i * (100 + 7)}%)`;
+		bar.style.transform = `translateX(${5+i * (100 + 7)}%)`;
 
 		// const barLabel = document.createElement("label");
 		let barLabel = document.createElement('label');
 		barLabel.classList.add('bar_id');
 		barLabel.innerHTML = value;
 		barLabel.innerHTML.fontsize = "50px";
+
+		if (num > 60) {
+			barLabel.style.display = 'none';
+		}
 
 		bar.appendChild(barLabel);
 		box.appendChild(bar);
@@ -46,10 +51,10 @@ function createBars(num) {
 const mainColor = '#de5d83';
 
 // color when compared
-const compColor = '#94a8b3'; //#222c3c '#FF4949'
+const compColor = '#AD235E'  //#222c3c '#FF4949'
 
 // color when in place (or done) '#58ffee'
-const finColor = '#222c3c';
+const finColor ='#de5d83'//'rgb(135, 167, 118)'
 
 createBars(40);
 
