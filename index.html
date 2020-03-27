@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <title>Sorting Visualizer</title>
+    <link href="src/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class = "header">
+        <section class="header2">SORTING ALGORITHMS VISUALIZER</section>
+            <button class="button" id="bSort" onclick="bubbleSort()">Bubble Sort</button>
+            <button class="button" id="sSort" onclick="selectionSort()">Selection Sort</button>
+            <button class="button" id="iSort" onclick="insertionSort()">Insertion Sort</button>
+            <button class="button" id="cSort" onclick="combSort()">Comb Sort</button>
+            <button class="button" id="mSort" onclick="mergeSort_inplace(array, 0 ,array.length-1)">Merge Sort</button>
+            <button class="button" id="hSort" onclick="heapSort(createArrayofValues())">Heap Sort</button>
+            <button class="button" id="qSort" onclick="let bars = document.querySelectorAll('.bar');quickSort(0, bars.length - 1)">Quick Sort</button>
+    </div>
+    <div  class = 'side'>
+        <div class="rangeslider">
+            <input type="range" min="4" max="200" value="40" class="myslider" id="sliderRange">
+            <p>Number of Bars: <span id="demo"></span></p>
+        </div>
+        <div class="speedslider">
+            <input type="range" min="1" max="500" value="10" class="myslider" id="speedRange">
+            <p>Speed (ms): <span id="demo2"></span></p>
+        </div>
+        <button class="button" id="generate" onclick="createBars(parseInt(output.innerHTML))">Generate Random Bars</button>
+    </div><section id= "box-data" class="data-box"></section>
+</body>
+<script src="src/index.js"></script>
+<script src="src/heapsort.js"></script>
+<script src="src/mergesort_inplace.js"></script>
+<script src="src/selectionsort.js"></script>
+<script src="src/bubblesort.js"></script>
+<script src="src/insertionsort.js"></script>
+<script src="src/combsort.js"></script>
+<script src="src/quicksort.js"></script>
+</html>
