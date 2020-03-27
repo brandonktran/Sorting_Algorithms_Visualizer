@@ -54,7 +54,7 @@ const mainColor = '#de5d83';
 const compColor = '#AD235E'  //#222c3c '#FF4949'
 
 // color when in place (or done) '#58ffee'
-const finColor ='rgb(135, 167, 118)'
+const finColor ='#de5d83'//'rgb(135, 167, 118)'
 
 createBars(40);
 
