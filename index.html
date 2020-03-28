@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class = "header">
-        <section class="header2">SORTING ALGORITHMS VISUALIZER</section>
+        <h1 class="header2">SORTING ALGORITHMS VISUALIZER</h1>
             <button class="button" id="bSort" onclick="bubbleSort()">Bubble Sort</button>
             <button class="button" id="sSort" onclick="selectionSort()">Selection Sort</button>
             <button class="button" id="iSort" onclick="insertionSort()">Insertion Sort</button>
@@ -20,11 +20,12 @@
             <button class="button" id="qSort" onclick="let bars = document.querySelectorAll('.bar');quickSort(0, bars.length - 1)">Quick Sort</button>
     </div>
     <div  class = 'side'>
-        <div class="rangeslider">
+        <div id = 'space'></div>
+        <div>
             <input type="range" min="4" max="400" value="40" class="myslider" id="sliderRange">
             <p>Number of Bars: <span id="demo"></span></p>
         </div>
-        <div class="speedslider">
+        <div>
             <input type="range" min="0.2" max="500" value="10" step = '0.2' class="myslider" id="speedRange">
             <p>Speed (ms): <span id="demo2"></span></p>
         </div>
