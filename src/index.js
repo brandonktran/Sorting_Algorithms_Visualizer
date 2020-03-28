@@ -13,7 +13,7 @@ function createBars(num) {
 		bar.classList.add('bar');
 		bar.style.height = `${value * 6}px`;
 		//bar.style.transform = `translateX(${i * 800/num}px)`;
-		let width = 60.51295 + (1.322553 - 60.51295) / (1 + (num / 155.6546) ** 2.583344);
+		// let width = 60.51295 + (1.322553 - 60.51295) / (1 + (num / 155.6546) ** 2.583344);
 		// bar.style.width = 100 / (num + width) + '%';
 		bar.style.width = (93.4/(num) + '%');
 		// bar.style.transform = `translateX(${i * 1200/num + 2}px)`;
@@ -51,7 +51,7 @@ function createBars(num) {
 const mainColor = '#de5d83';
 
 // color when compared
-const compColor = '#AD235E'  //#222c3c '#FF4949'
+const compColor = 'rgb(120, 32, 70)'  //#222c3c '#FF4949'
 
 // color when in place (or done) '#58ffee'
 const finColor ='#de5d83'//'rgb(135, 167, 118)'
@@ -96,15 +96,6 @@ function enableButtons() {
 	document.getElementById('sliderRange').disabled = false;
 }
 
-// function arraysAreEqual(arrayOne, arrayTwo) {
-//   if (arrayOne.length !== arrayTwo.length) return false;
-//   for (let i = 0; i < arrayOne.length; i++) {
-//     if (arrayOne[i] !== arrayTwo[i]) {
-//       return false;
-//     }
-//   }
-//   return true;
-// }
 
 //slider- change number of bars
 let rangeslider = document.getElementById('sliderRange');
@@ -132,17 +123,3 @@ speedslider.oninput = function() {
 let current = function currentValue() {
 	return parseInt(output.innerHTML);
 };
-
-// when click generate new bars and then sort, it sorts the previous array of values, need to fix
-// also only sorts the first 20, need to update current array
-// input fields for speed, maybe give own array values
-
-// let rangeslider = document.getElementById("sliderRange");
-// let output = document.getElementById("demo");
-// output.innerHTML = rangeslider.value;
-
-// rangeslider.oninput = function () {
-//   output.innerHTML = this.value;
-//   console.log(typeof this.value);
-//   createBars(parseInt(this.value));
-// }
