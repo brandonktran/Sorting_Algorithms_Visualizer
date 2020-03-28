@@ -79,6 +79,10 @@ body {
      border: 1px solid white;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .side {
 	background-color: #D48166;
 	vertical-align: top;
