@@ -10,7 +10,8 @@ font-weight: normal;
 }
 
 body {
-	background-color: #373a36;
+  background-color: #373a36;
+  position:relative;
 }
 
 .header {
@@ -22,7 +23,7 @@ body {
 }
 
 .header2 {
-	font-size: 4vw;
+	font-size: 380%;
 	color: white;
 	padding:0%;
 	padding-top: 0.2%;
@@ -32,8 +33,8 @@ body {
 .data-box {
 	width: 83.2%;
 		/* width: 1200px; */
-	height: 630px;
-	position: relative;
+	height: 80vh;
+	position: static;
 	margin: 0 auto;
 	background-color: rgb(225, 221, 216);
 	display: inline-block;
@@ -41,16 +42,17 @@ body {
 
 .bar {
 	/* border-radius: 15px 50px 30px 0px; */
-	position: absolute;
-	left: 0;
-	bottom: 0;
+  position: absolute;
+  display:inline-block;
+  left: 16.5%;
+  bottom:0.5vh;
 	background-color:#de5d83;
 	/* transition: 0.2s all ease; */
 }
 
 .bar_id {
 	position: absolute;
-	top: -28px;
+  top: -28px;
 	width: 100%;
 	text-align: center;
 	font-size: 1.8vw;
@@ -60,9 +62,9 @@ body {
 	color: black;
 	/* background-color:white; */
 	/* font-size: 30px; */
-	font-size: 2.3vw;
+	font-size: 200%;
 	border-width: small;
-	padding: 5px;
+	padding: 0.3%;
 	margin-top: 0%;
 	margin-bottom: 1%;
 	color: white;
@@ -88,7 +90,7 @@ body {
 	vertical-align: top;
 	text-align: center;
 	width: 16%;
-	height: 630px;
+	height: 80vh;
 	display:inline-block;
 	font-size: 2.3vw;
 	border-color: black;
@@ -97,7 +99,7 @@ body {
 span, p {
 	color: white;
 	/* font-family: Arial, Helvetica, sans-serif; */
-	font-size: 2vw;
+	font-size: 100%;
 	padding-top: 5%;
 }
 
