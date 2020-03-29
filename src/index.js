@@ -12,7 +12,6 @@ function createBars(num) {
 		const bar = document.createElement('div');
 		bar.classList.add('bar');
 		bar.style.height = `${value * 6}px`;
-		//bar.style.transform = `translateX(${i * 800/num}px)`;
 		// let width = 60.51295 + (1.322553 - 60.51295) / (1 + (num / 155.6546) ** 2.583344);
 		// bar.style.width = 100 / (num + width) + '%';
 		bar.style.width = (93.4/(num) + '%');
