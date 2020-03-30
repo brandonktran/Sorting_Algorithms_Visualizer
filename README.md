@@ -5,4 +5,4 @@ This visualization tool implements 7 different sorting algorithms, and made usin
 
 <img src="images/site.png" alt="HTML5 Icon" width="940">
 
-<img src="images/selection_sort.gif" alt="HTML5 Icon" width="450"> <img src="images/comb_sort.gif" alt="HTML5 Icon" width="450">
+<img src="images/selection-sort.gif" alt="HTML5 Icon" width="450"> <img src="images/comb-sort.gif" alt="HTML5 Icon" width="450">
