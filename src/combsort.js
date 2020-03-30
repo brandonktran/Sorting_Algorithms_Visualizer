@@ -16,15 +16,11 @@ async function combSort() {
 	let gap = bars.length;
 	const shrinkFactor = 1.3;
 
-	// Repeat iterations Until array is not sorted
-
 	while (!checkSort(bars)) {
-		// If not first gap  Calculate gap
-		// if (counter > 0) gap = gap == 1 ? gap : Math.floor(gap / shrinkFactor);
 		if (gap > 1) {
 			gap = Math.floor(gap / shrinkFactor);
 		}
-		// Set front and back elements and increment to a gap
+
 		let front = 0;
 		let back = gap;
 
@@ -45,8 +41,6 @@ async function combSort() {
 
 			bars[front].style.backgroundColor = mainColor;
 			bars[back].style.backgroundColor = mainColor;
-
-			// Increment and re-run swapping
 
 			front++;
 			back++;

@@ -3,9 +3,7 @@ async function bubbleSort() {
 
 	let bars = document.querySelectorAll('.bar');
 
-	//loop through all array elements
 	for (let i = 0; i < bars.length - 1; i++) {
-		// elements up to ith position are correctly in place
 		for (let j = 0; j < bars.length - i - 1; j++) {
 			bars[j].style.backgroundColor = compColor;
 			bars[j + 1].style.backgroundColor = compColor;
@@ -18,7 +16,6 @@ async function bubbleSort() {
 			const value2 = Number(bars[j + 1].childNodes[0].innerHTML);
 
 			if (value1 > value2) {
-				// swap bars if current element is greater than the next
 				bars[j].children[0].innerHTML = value2;
 				bars[j + 1].children[0].innerHTML = value1;
 				bars[j].style.height = `${value2 * 6}px`;
