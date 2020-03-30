@@ -14,10 +14,10 @@ function createBars(num) {
 		bar.style.height = `${value * 6}px`;
 		// let width = 60.51295 + (1.322553 - 60.51295) / (1 + (num / 155.6546) ** 2.583344);
 		// bar.style.width = 100 / (num + width) + '%';
-		bar.style.width = (93.4/(num) + '%');
+		bar.style.width = (79/(num) + 'vw');
 		// bar.style.transform = `translateX(${i * 1200/num + 2}px)`;
 		let space = num*10/(num+1);
-		bar.style.transform = `translateX(${5+i * (100+7)}%)`;
+		bar.style.transform = `translateX(${4.4/num + i * (79/num + 4.4/(num+1))}vw)`;
 
 		// const barLabel = document.createElement("label");
 		let barLabel = document.createElement('label');
