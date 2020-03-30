@@ -30,7 +30,7 @@ body {
 }
 
 .data-box {
-	width: 83.2%;
+	width: 83.4vw;
 	/* width: 1200px; */
 	height: 630px;
 	position: relative;
@@ -96,7 +96,7 @@ body {
 	background-color: #d48166;
 	vertical-align: top;
 	text-align: center;
-	width: 16%;
+	width: 16vw;
 	height: 630px;
 	display: inline-block;
 	font-size: 2.3vw;
