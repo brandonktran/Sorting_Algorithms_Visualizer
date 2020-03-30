@@ -1,11 +1,11 @@
 @font-face {
-font-family: Simp;
-src: url(../fonts/SIMPLIFICA/SIMPLIFICATypeface.ttf) format('truetype');
-font-weight: normal;
+	font-family: Simp;
+	src: url(../fonts/SIMPLIFICA/SIMPLIFICATypeface.ttf) format('truetype');
+	font-weight: normal;
 }
 
 * {
-	font-family: Simp, Helvetica Neue,Helvetica,sans-serif;
+	font-family: Simp, Helvetica Neue, Helvetica, sans-serif;
 	color: black;
 }
 
@@ -24,14 +24,14 @@ body {
 .header2 {
 	font-size: 4vw;
 	color: white;
-	padding:0%;
+	padding: 0%;
 	padding-top: 0.2%;
 	margin: 0%;
 }
 
 .data-box {
 	width: 83.2%;
-		/* width: 1200px; */
+	/* width: 1200px; */
 	height: 630px;
 	position: relative;
 	margin: 0 auto;
@@ -44,7 +44,7 @@ body {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background-color:#de5d83;
+	background-color: #de5d83;
 	/* transition: 0.2s all ease; */
 }
 
@@ -75,43 +75,43 @@ body {
 }
 
 .button:hover {
-     background: -webkit-linear-gradient(top, black, rgb(111, 108, 102));
-     border: 1px solid white;
+	background: -webkit-linear-gradient(top, black, rgb(111, 108, 102));
+	border: 1px solid white;
 }
 
 .button:focus {
-  outline: none;
+	outline: none;
 }
 
 .side {
-	background-color:#D48166;
+	background-color: #d48166;
 	vertical-align: top;
 	text-align: center;
 	width: 16%;
 	height: 630px;
-	display:inline-block;
+	display: inline-block;
 	font-size: 2.3vw;
 	border-color: black;
 }
 
-span, p {
+span,
+p {
 	color: white;
 	/* font-family: Arial, Helvetica, sans-serif; */
 	font-size: 2vw;
 	padding-top: 5%;
 }
 
-.myslider{
+.myslider {
 	width: 60%;
 	cursor: pointer;
 	opacity: 0.8;
-  -webkit-transition: .2s;
+	-webkit-transition: .2s;
 	transition: opacity .2s;
 }
 
-
 .myslider:hover {
-  opacity: 1;
+	opacity: 1;
 }
 
 #foot {
