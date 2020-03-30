@@ -69,11 +69,20 @@ body {
 	margin-bottom: 1%;
 	color: white;
 	background-color: #373a36;
-	cursor: pointer;
+  cursor: pointer;
+	border-radius: 0.7vw;
+	margin-right: 0.5%;
+  box-shadow: 0vw 0.18vw white;
 }
 
 .button[disabled] {
 	color: grey;
+}
+
+.button:active {
+	transform: translatex(0.18vw);
+	transform: translatey(0.18vw);
+	box-shadow: 0vw 0.1vw  rgb(230, 229, 229);
 }
 
 .button:hover {
