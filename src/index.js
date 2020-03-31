@@ -14,16 +14,16 @@ function createBars(num) {
 		bar.style.height = `${value * 6}px`;
 		// let width = 60.51295 + (1.322553 - 60.51295) / (1 + (num / 155.6546) ** 2.583344);
 		// bar.style.width = 100 / (num + width) + '%';
-		bar.style.width = (79/(num) + 'vw');
+		bar.style.width = 79 / num + 'vw';
 		// bar.style.transform = `translateX(${i * 1200/num + 2}px)`;
-		let space = num*10/(num+1);
-		bar.style.transform = `translateX(${4/(num+1) + i * (79/num + 4/(num+1))}vw)`;
+		let space = num * 10 / (num + 1);
+		bar.style.transform = `translateX(${3.8 / (num + 1) + i * (79 / num + 3.8 / (num + 1))}vw)`;
 
 		// const barLabel = document.createElement("label");
 		let barLabel = document.createElement('label');
 		barLabel.classList.add('bar_id');
 		barLabel.innerHTML = value;
-		barLabel.innerHTML.fontsize = "50px";
+		barLabel.innerHTML.fontsize = '50px';
 
 		if (num > 60) {
 			barLabel.style.display = 'none';
@@ -51,10 +51,10 @@ function createBars(num) {
 const mainColor = '#de5d83';
 
 // color when compared
-const compColor = 'rgb(120, 32, 70)'  //#222c3c '#FF4949'
+const compColor = 'rgb(120, 32, 70)'; //#222c3c '#FF4949'
 
 // color when in place (or done) '#58ffee'
-const finColor ='#de5d83'//'rgb(135, 167, 118)'
+const finColor = '#de5d83'; //'rgb(135, 167, 118)'
 
 createBars(40);
 
@@ -95,7 +95,6 @@ function enableButtons() {
 	document.getElementById('generate').disabled = false;
 	document.getElementById('sliderRange').disabled = false;
 }
-
 
 //slider- change number of bars
 let rangeslider = document.getElementById('sliderRange');
