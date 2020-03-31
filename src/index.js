@@ -17,7 +17,7 @@ function createBars(num) {
 		bar.style.width = (79/(num) + 'vw');
 		// bar.style.transform = `translateX(${i * 1200/num + 2}px)`;
 		let space = num*10/(num+1);
-		bar.style.transform = `translateX(${4.2/(num+1) + i * (79/num + 4.2/(num+1))}vw)`;
+		bar.style.transform = `translateX(${4/(num+1) + i * (79/num + 4/(num+1))}vw)`;
 
 		// const barLabel = document.createElement("label");
 		let barLabel = document.createElement('label');
